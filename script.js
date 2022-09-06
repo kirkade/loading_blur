@@ -8,9 +8,9 @@ let int = setInterval(blurring, 30)
 function blurring() {
     load++;
 
-    if(load>99) {
+    if(load >99) {
         clearInterval(int)
-    }
+    };
 
     loadText.innerHTML = `${load}%`;
     loadText.style.opacity = scale(load, 0,100,1,0)
